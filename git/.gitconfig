@@ -1,0 +1,12 @@
+[user]
+	name = Nizam Chaudhary
+	email = ChaudharyNizam10@gmail.com
+	signingkey = 7D8FEB38CF0C506B
+[commit]
+	gpgsign = true
+[maintenance]
+	repo = /home/nizam/code/olpgas-backend
+[core]
+	editor = vim --write
+[init]
+	defaultBranch = main

@@ -7,6 +7,6 @@
 [maintenance]
 	repo = /home/nizam/code/olpgas-backend
 [core]
-	editor = vim --write
+	editor = vim
 [init]
 	defaultBranch = main

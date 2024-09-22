@@ -1,0 +1,57 @@
+[
+  {
+    "name": "AltTab Mod",
+    "description": "Better AltTab Experience",
+    "url": "https://extensions.gnome.org/extension/4007/alttab-mod/"
+  },
+  {
+    "name": "Blur my Shell",
+    "description": "Blur Effect to shell",
+    "url": "https://extensions.gnome.org/extension/3193/blur-my-shell/"
+  },
+  {
+    "name": "Clipboard Indicator",
+    "description": "clipboard manager",
+    "url": "https://extensions.gnome.org/extension/779/clipboard-indicator/"
+  },
+  {
+    "name": "Caffeine",
+    "description": "Disable the screensaver and auto suspend",
+    "url": "https://extensions.gnome.org/extension/517/caffeine/"
+  },
+  {
+    "name": "Dash to Dock",
+    "description": "Docks the Dash Panel",
+    "url": "https://extensions.gnome.org/extension/307/dash-to-dock/"
+  },
+  {
+    "name": "Emoji Selector",
+    "description": "Emojis",
+    "url": "https://extensions.gnome.org/extension/1162/emoji-selector/"
+  },
+  {
+    "name": "Vitals",
+    "description": "Vital Info",
+    "url": "https://extensions.gnome.org/extension/1460/vitals/"
+  },
+  {
+    "name": "Impatience",
+    "description": "Speed up the gnome-shell animation speed",
+    "url": "https://extensions.gnome.org/extension/277/impatience/"
+  },
+  {
+    "name": "AppIndicator and KStatusNotifierItem Support",
+    "description": "App Indicator for top panel",
+    "url": "https://extensions.gnome.org/extension/615/appindicator-support/"
+  },
+  {
+    "name": "Gnome 4x UI Improvements",
+    "description": "Tunes gnome 4x Overview UI to make it more usable.",
+    "url": "https://extensions.gnome.org/extension/4158/gnome-40-ui-improvements/"
+  },
+  {
+    "name": "Night Theme Switcher",
+    "description": "Toggle your desktop’s color scheme between light and dark",
+    "url": "https://extensions.gnome.org/extension/2236/night-theme-switcher/"
+  }
+]

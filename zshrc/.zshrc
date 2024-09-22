@@ -142,3 +142,5 @@ alias vim=vim
 export GPG_TTY=$(tty)
 
 export PATH=$PATH:~/dev/android-studio/bin
+
+PATH=~/.console-ninja/.bin:$PATH

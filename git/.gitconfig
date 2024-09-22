@@ -6,6 +6,7 @@
 	gpgsign = true
 [maintenance]
 	repo = /home/nizam/code/olpgas-backend
+	repo = /home/nizam/dotfiles
 [core]
 	editor = vim
 [init]

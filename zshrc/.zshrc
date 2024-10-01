@@ -82,9 +82,6 @@ plugins=(git zsh-syntax-highlighting zsh-autosuggestions sudo npm node vscode co
 source $ZSH/oh-my-zsh.sh
 
 # Pure theme
-print() {
-  [ 0 -eq $# -a "prompt_pure_precmd" = "${funcstack[-1]}" ] || builtin print "$@";
-}
 fpath+=($HOME/.zsh/pure)
 autoload -U promptinit; promptinit
 prompt pure

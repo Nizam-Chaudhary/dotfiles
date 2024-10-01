@@ -144,10 +144,10 @@ source "$OSH"/oh-my-bash.sh
 # alias ohmybash="mate ~/.oh-my-bash"
 
 # alias for eza
-if [ -x "$(command -v eza)" ]; then
-    alias ls="eza --icons=always"
-    alias la="eza --long --all --group --icons=always"
-    alias l="eza -l --icons=always"
+if [ -x "$(command -v exa)" ]; then
+    alias ls="exa --icons"
+    alias la="exa --long --all --group --icons"
+    alias l="exa -l --icons"
 fi
 
 # alias for gnome-text-editor

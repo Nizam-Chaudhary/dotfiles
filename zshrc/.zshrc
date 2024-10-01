@@ -82,9 +82,13 @@ plugins=(git zsh-syntax-highlighting zsh-autosuggestions sudo npm node vscode co
 source $ZSH/oh-my-zsh.sh
 
 # Pure theme
+print() {
+  [ 0 -eq $# -a "prompt_pure_precmd" = "${funcstack[-1]}" ] || builtin print "$@";
+}
 fpath+=($HOME/.zsh/pure)
 autoload -U promptinit; promptinit
 prompt pure
+
 
 
 # User configuration
@@ -116,10 +120,10 @@ prompt pure
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [ -x "$(command -v eza)" ]; then
-    alias ls="eza --icons=always"
-    alias la="eza --long --all --group --icons=always"
-    alias l="eza -l --icons=always"
+if [ -x "$(command -v exa)" ]; then
+    alias ls="exa --icons"
+    alias la="exa --long --all --group --icons"
+    alias l="exa -l --icons"
 fi
 
 

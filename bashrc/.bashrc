@@ -172,3 +172,10 @@ export PATH=$PATH:~/dev/android-studio/bin
 
 eval "$(stack --bash-completion-script stack)"
 PATH=~/.console-ninja/.bin:$PATH
+
+# fm6000
+if [ -x "$(command -v fm6000)" ]; then
+  fm6000 -c blue -f ~/config-files/arch.txt
+  alias clear="clear && fm6000 -c blue -f ~/config-files/arch.txt"
+  alias cls="clear"
+fi

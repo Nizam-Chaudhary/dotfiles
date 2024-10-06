@@ -86,7 +86,12 @@ fpath+=($HOME/.zsh/pure)
 autoload -U promptinit; promptinit
 prompt pure
 
-
+# fm6000
+if [ -x "$(command -v fm6000)" ]; then
+  fm6000 -c blue -f ~/config-files/arch.txt
+  alias clear="clear && fm6000 -c blue -f ~/config-files/arch.txt"
+  alias cls="clear"
+fi
 
 # User configuration
 
@@ -117,10 +122,10 @@ prompt pure
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [ -x "$(command -v exa)" ]; then
-    alias ls="exa --icons"
-    alias la="exa --long --all --group --icons"
-    alias l="exa -l --icons"
+if [ -x "$(command -v eza)" ]; then
+    alias ls="eza --icons"
+    alias la="eza --long --all --group --icons"
+    alias l="eza -l --icons"
 fi
 
 
@@ -130,8 +135,6 @@ if [ -x "$(command -v gnome-text-editor)" ]; then
 fi
 
 bindkey ^H backward-delete-word
-
-
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -151,3 +154,4 @@ export GPG_TTY=$(tty)
 export PATH=$PATH:~/dev/android-studio/bin
 
 PATH=~/.console-ninja/.bin:$PATH
+

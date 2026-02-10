@@ -3,20 +3,20 @@
   "theme": {
     "mode": "dark",
     "light": "Catppuccin Latte",
-    "dark": "Catppuccin Mocha",
+    "dark": "Catppuccin Mocha"
   },
   "icon_theme": "Material Icon Theme",
   "tab_bar": {
-    "show_nav_history_buttons": false,
+    "show_nav_history_buttons": false
   },
   "tabs": {
     "file_icons": true,
     "git_status": true,
     "show_close_button": "always",
-    "show_diagnostics": "errors",
+    "show_diagnostics": "errors"
   },
   "title_bar": {
-    "show_branch_icon": true,
+    "show_branch_icon": true
   },
 
   // =============== Font & Typography ===============
@@ -26,7 +26,7 @@
   "buffer_font_size": 18,
   "buffer_font_weight": 320,
   "buffer_line_height": {
-    "custom": 1.6,
+    "custom": 1.6
   },
   // "buffer_font_features": {
   //   "calt": true,
@@ -57,20 +57,20 @@
   "colorize_brackets": true,
   "indent_guides": {
     "enabled": true,
-    "coloring": "indent_aware",
+    "coloring": "indent_aware"
   },
   "scrollbar": {
-    "show": "always",
+    "show": "always"
   },
   "minimap": {
     "show": "never",
     "display_in": "active_editor",
     "max_width_columns": 80,
-    "thumb_border": "full",
+    "thumb_border": "full"
   },
   "toolbar": {
     "code_actions": true,
-    "quick_actions": false,
+    "quick_actions": false
   },
 
   // =============== AI, Copilot & Agent ===============
@@ -78,21 +78,21 @@
   "edit_predictions": {
     "provider": "zed",
     "enabled_in_text_threads": false,
-    "mode": "eager",
+    "mode": "eager"
   },
   "agent": {
     "always_allow_tool_actions": true,
     "default_width": 320,
     "default_model": {
-      "model": "gpt-4.1",
-      "provider": "copilot_chat",
+      "model": "claude-haiku-4.5",
+      "provider": "copilot_chat"
     },
     "default_profile": "write",
     "dock": "left",
     "inline_assistant_model": {
       "model": "gpt-4.1",
-      "provider": "copilot_chat",
-    },
+      "provider": "copilot_chat"
+    }
   },
   "agent_buffer_font_size": 16,
   "agent_ui_font_size": 20,
@@ -100,9 +100,9 @@
     "mcp-server-context7": {
       "enabled": true,
       "settings": {
-        "context7_api_key": "ctx7sk-23075d37-1c04-429e-8535-0643263bbe9a",
-      },
-    },
+        "context7_api_key": "ctx7sk-23075d37-1c04-429e-8535-0643263bbe9a"
+      }
+    }
   },
 
   // =============== Language Specific & LSP ===============
@@ -111,49 +111,50 @@
     "include_warnings": false,
     "inline": {
       "enabled": true,
-      "update_debounce_ms": 100,
-    },
+      "update_debounce_ms": 100
+    }
   },
   "inlay_hints": {
-    "enabled": false,
+    "enabled": false
   },
   "lsp_document_colors": "inlay",
   "lsp": {
     "biome": {
       "settings": {
-        "require_config_file": true,
-      },
+        "require_config_file": true
+      }
     },
     "tailwindcss-language-server": {
       "settings": {
-        "classAttributes": ["class", "className", "ngClass", "styles", "cva"],
-      },
-    },
+        "classAttributes": ["class", "className", "ngClass", "styles", "cva"]
+      }
+    }
   },
   "languages": {
     "CSS": {
-      "formatter": "prettier",
+      "formatter": "prettier"
     },
     "GraphQL": {
-      "formatter": "prettier",
+      "formatter": "prettier"
     },
     "HTML": {
-      "formatter": "prettier",
+      "formatter": "prettier"
     },
     "JSON": {
-      "formatter": "prettier",
+      "formatter": "prettier"
     },
     "JSONC": {
-      "formatter": "prettier",
+      "formatter": "prettier"
     },
     "Markdown": {
-      "formatter": "prettier",
+      "formatter": "prettier"
     },
     "JavaScript": {
       "formatter": "prettier",
       "language_servers": [
         "!typescript-language-server",
-        "tsgo",
+        "!tsgo",
+        "!oxc",
         "vtsls",
         "..."
       ]
@@ -162,7 +163,8 @@
       "formatter": "prettier",
       "language_servers": [
         "!typescript-language-server",
-        "tsgo",
+        "!tsgo",
+        "!oxc",
         "vtsls",
         "..."
       ]
@@ -171,59 +173,60 @@
       "formatter": "prettier",
       "language_servers": [
         "!typescript-language-server",
-        "tsgo",
+        "!tsgo",
+        "!oxc",
         "vtsls",
         "..."
       ]
     },
     "YAML": {
-      "formatter": "prettier",
-    },
+      "formatter": "prettier"
+    }
   },
   "prettier": {
     "allowed": true,
     "arrowParens": "always",
     "plugins": [
       "prettier-plugin-organize-imports",
-      "prettier-plugin-tailwindcss",
+      "prettier-plugin-tailwindcss"
     ],
-    "tabWidth": 2,
+    "tabWidth": 2
   },
 
   // =============== Panels & UI Layout ===============
   "active_pane_modifiers": {
-    "border_size": 2,
+    "border_size": 2
   },
   "project_panel": {
     "default_width": 320,
-    "dock": "right",
+    "dock": "right"
   },
   "outline_panel": {
     "default_width": 320,
-    "dock": "right",
+    "dock": "right"
   },
   "git_panel": {
     "default_width": 320,
     "dock": "right",
     "status_style": "label_color",
-    "tree_view": false,
+    "tree_view": false
   },
   "centered_layout": {
     "left_padding": 0.15,
-    "right_padding": 0.15,
+    "right_padding": 0.15
   },
   "collaboration_panel": {
     "button": true,
-    "default_width": 280,
+    "default_width": 280
   },
   "notification_panel": {
     "button": true,
     "dock": "left",
-    "default_width": 280,
+    "default_width": 280
   },
   "debugger": {
     "button": true,
-    "dock": "bottom",
+    "dock": "bottom"
   },
 
   // =============== Terminal ===============
@@ -231,22 +234,22 @@
     "button": true,
     "dock": "bottom",
     "env": {
-      "EDITOR": "zed --wait",
+      "EDITOR": "zed --wait"
     },
     "font_family": "Maple Mono NF",
     "font_size": 15,
     "font_weight": 320,
-    "shell": "system",
+    "shell": "system"
   },
 
   // =============== Project, Files & Search ===============
   "file_finder": {
     "git_status": true,
     "include_ignored": "smart",
-    "modal_max_width": "medium",
+    "modal_max_width": "medium"
   },
   "file_types": {
-    "Dockerfile": ["Dockerfile", "Dockerfile.*"],
+    "Dockerfile": ["Dockerfile", "Dockerfile.*"]
   },
   "file_scan_exclusions": [
     "**/.git",
@@ -258,26 +261,27 @@
     "**/.classpath",
     "**/.settings",
     "**/out",
+    "!**/.env",
     "**/.turbo",
     "**/.vscode-test",
     "**/.next",
     "**/.storybook",
     "**/.tap",
     "**/.nyc_output",
-    "**/report",
+    "**/report"
   ],
   "git": {
     "git_gutter": "tracked_files",
     "gutter_debounce": 100,
     "inline_blame": {
       "show_commit_summary": true,
-      "delay_ms": 100,
-    },
+      "delay_ms": 100
+    }
   },
   "search": {
     "button": true,
     "center_on_match": false,
-    "regex": false,
+    "regex": false
   },
   "seed_search_query_from_cursor": "selection",
 
@@ -308,15 +312,15 @@
     "terraform": true,
     "toml": true,
     "tsgo": true,
-    "catppuccin": true,
+    "catppuccin": true
   },
 
   // =============== Miscellaneous ===============
   "redact_private_values": false,
   "telemetry": {
     "diagnostics": false,
-    "metrics": false,
+    "metrics": false
   },
   "use_system_path_prompts": false,
-  "use_system_prompts": false,
+  "use_system_prompts": false
 }

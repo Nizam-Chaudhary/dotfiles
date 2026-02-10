@@ -1,7 +1,7 @@
 {
   // ========== Visuals ==========
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.fontFamily": "JetBrainsMonoNL Nerd Font Mono",
+  "editor.cursorSmoothCaretAnimation": "off",
+  "editor.fontFamily": "Maple Mono NF",
   "editor.guides.bracketPairs": "active",
   "editor.lineNumbers": "on",
   "editor.renderWhitespace": "boundary",
@@ -9,18 +9,18 @@
   "workbench.fontAliasing": "antialiased",
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.list.smoothScrolling": true,
+  "workbench.list.smoothScrolling": false,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.expandMode": "singleClick",
   "workbench.tree.indent": 10,
   "editor.fontSize": 15,
-  "editor.inlineSuggest.fontFamily": "JetBrainsMonoNL Nerd Font Mono",
-  "terminal.integrated.fontFamily": "JetBrainsMonoNL Nerd Font Mono",
+  "editor.inlineSuggest.fontFamily": "Maple Mono NF",
+  "terminal.integrated.fontFamily": "Maple Mono NF",
   "terminal.integrated.fontSize": 13,
-  "chat.fontFamily": "JetBrainsMonoNL Nerd Font Mono",
+  "chat.fontFamily": "Maple Mono NF",
   "chat.fontSize": 12,
-  "chat.editor.fontFamily": "JetBrainsMonoNL Nerd Font Mono",
+  "chat.editor.fontFamily": "Maple Mono NF",
 
   // ========== Editor ==========
   "debug.onTaskErrors": "debugAnyway",
@@ -52,7 +52,7 @@
   "window.newWindowProfile": "Default",
   "window.zoomLevel": 0.5,
   "editor.linkedEditing": true,
-  "editor.smoothScrolling": true,
+  "editor.smoothScrolling": false,
   "editor.mouseWheelScrollSensitivity": 1,
   "editor.codeActionsOnSave": {
     "source.fixAll": "never",
@@ -474,5 +474,8 @@
     "*.w": "$(capture).*.w, I$(capture).w",
     "*.wat": "$(capture).wasm",
     "*.xaml": "$(capture).xaml.cs"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
   }
 }

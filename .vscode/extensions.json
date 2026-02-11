@@ -5,7 +5,7 @@
     "antfu.open-in-github-button",
     "lokalise.i18n-ally",
     // themes & icons
-    "antfu.icons-carbon",
+    // "antfu.icons-carbon",
     // "antfu.theme-vitesse",
     "file-icons.file-icons",
     // life savers!
@@ -63,7 +63,8 @@
     "ms-vscode-remote.remote-ssh",
     "ms-vscode.remote-explorer",
     "redhat.vscode-xml",
-    "github.copilot"
+    "github.copilot",
+    "oxc.oxc-vscode"
     // "jdinhlife.gruvbox"
     // "vscodevim.vim",
     // "vue.volar",

@@ -6,7 +6,7 @@
     "lokalise.i18n-ally",
     // themes & icons
     "antfu.icons-carbon",
-    "antfu.theme-vitesse",
+    // "antfu.theme-vitesse",
     "file-icons.file-icons",
     // life savers!
     "dbaeumer.vscode-eslint",
@@ -41,7 +41,6 @@
     "catppuccin.catppuccin-vsc",
 
     "gruntfuggly.todo-tree",
-    "rust-lang.rust-analyzer",
     "oven.bun-vscode",
     "stylelint.vscode-stylelint",
     // "tobias-z.vscode-harpoon",
@@ -59,6 +58,13 @@
     "github.vscode-github-actions",
     // "GitHub.vscode-pull-request-github",
     "ms-kubernetes-tools.vscode-kubernetes-tools",
+    "prisma.prisma",
+    "mechatroner.rainbow-csv",
+    "ms-vscode-remote.remote-ssh",
+    "ms-vscode.remote-explorer",
+    "redhat.vscode-xml",
+    "github.copilot"
+    // "jdinhlife.gruvbox"
     // "vscodevim.vim",
     // "vue.volar",
     // "chrmarti.regex",

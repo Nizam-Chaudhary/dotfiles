@@ -351,7 +351,7 @@
   // },
 
   // ========== TypeScript / JavaScript ==========
-  "typescript.experimental.useTsgo": false,
+  "typescript.experimental.useTsgo": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.preferGoToSourceDefinition": true,

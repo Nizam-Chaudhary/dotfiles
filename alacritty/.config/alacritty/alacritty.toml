@@ -1,4 +1,3 @@
-
 #### THEME ####
 general.import = ["~/.config/alacritty/themes/catppuccin-mocha.toml"]
 
@@ -36,10 +35,10 @@ normal = { family = "Maple Mono NF", style = "Regular" }
 bold = { family = "Maple Mono NF", style = "Bold" }
 italic = { family = "Maple Mono NF", style = "Italic" }
 bold_italic = { family = "Maple Mono NF", style = "Bold Italic" }
-size = 14
+size = 12
 
 [colors]
 draw_bold_text_with_bright_colors = true
 
-[selection]
-save_to_clipboard = true
+# [selection]
+# save_to_clipboard = true

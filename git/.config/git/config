@@ -71,7 +71,7 @@
 [credential]
     credentialStore = gpg
   	helper = /usr/local/bin/git-credential-manager
-#  	githubAuthMode=device
+  	githubAuthMode=device
 
 [credential "https://dev.azure.com"]
   	useHttpPath = true

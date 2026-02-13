@@ -4,7 +4,7 @@
   "editor.fontFamily": "Maple Mono NF",
   "editor.guides.bracketPairs": "active",
   "editor.lineNumbers": "on",
-  "editor.renderWhitespace": "boundary",
+  "editor.renderWhitespace": "selection",
   "workbench.editor.tabActionLocation": "right",
   "workbench.fontAliasing": "antialiased",
   "workbench.colorTheme": "Catppuccin Mocha",
@@ -37,13 +37,13 @@
   "breadcrumbs.symbolPath": "off",
   "editor.minimap.enabled": false,
   "zenMode.hideStatusBar": false,
-  "window.density.editorTabHeight": "compact",
+  "window.density.editorTabHeight": "default",
   "workbench.editor.showTabs": "multiple",
   "zenMode.fullScreen": true,
   "zenMode.hideLineNumbers": false,
   "workbench.activityBar.orientation": "vertical",
   "breadcrumbs.enabled": true,
-  "explorer.autoReveal": false,
+  "explorer.autoReveal": true,
   "editor.tabSize": 2,
   "editor.lineHeight": 22,
   "editor.unicodeHighlight.invisibleCharacters": false,
@@ -477,5 +477,13 @@
   },
   "[sql]": {
     "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://biomejs.dev": true
   }
 }

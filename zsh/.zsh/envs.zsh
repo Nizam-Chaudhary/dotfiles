@@ -26,5 +26,5 @@ export PATH="$HOME/.bun/bin:$PATH"
 
 # Use kitty's ssh kitten only when running inside kitty
 if [ "$TERM" = "xterm-kitty" ]; then
-  alias kssh="kitten ssh"
+  alias ssh="kitten ssh"
 fi

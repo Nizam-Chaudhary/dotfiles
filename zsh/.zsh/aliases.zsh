@@ -23,3 +23,5 @@ else
   export EDITOR="vi"
   export VISUAL="vi"
 fi
+
+alias ag='antigravity'

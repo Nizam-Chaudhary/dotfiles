@@ -28,3 +28,7 @@ export PATH="$HOME/.bun/bin:$PATH"
 if [ "$TERM" = "xterm-kitty" ]; then
   alias ssh="kitten ssh"
 fi
+
+# GPG TTY
+export GPG_TTY=$(tty)
+

@@ -72,6 +72,9 @@
   "git.autoStash": true,
   "git.autofetch": true,
 
+  "remote.autoForwardPorts": false,
+  "remote.autoForwardPortsSource": "hybrid",
+
   "workbench.editorAssociations": {
     "git-rebase-todo": "default"
   },

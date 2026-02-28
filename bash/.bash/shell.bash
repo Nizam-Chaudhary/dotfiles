@@ -7,12 +7,15 @@ HISTFILESIZE="${HISTSIZE}"
 # Homebrew environment
 if [ -x /home/linuxbrew/.linuxbrew/bin/brew ]; then
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-  export BASH_COMPLETION_COMPAT_DIR="/home/linuxbrew/.linuxbrew/etc/bash_completion.d"
 fi
 
-# Bash completion (system + Homebrew)
-if [[ -r /usr/share/bash-completion/bash_completion ]]; then
-  source /usr/share/bash-completion/bash_completion
+# Bash completion
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
 fi
 
 # Ensure command hashing is off for mise

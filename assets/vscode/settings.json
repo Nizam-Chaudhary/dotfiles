@@ -8,7 +8,7 @@
   "workbench.editor.tabActionLocation": "right",
   "workbench.fontAliasing": "antialiased",
   "workbench.colorTheme": "Catppuccin Mocha",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "file-icons",
   "workbench.list.smoothScrolling": false,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
@@ -309,6 +309,7 @@
   "svg.preview.mode": "svg",
   // I only use Prettier for manually formatting
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": false,
   "prettier.printWidth": 200,
   "prettier.semi": false,
   "prettier.singleQuote": true,

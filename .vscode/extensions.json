@@ -36,7 +36,7 @@
     "golang.go",
     "qufiwefefwoyn.inline-sql-syntax",
     "typescriptteam.native-preview",
-    "pkief.material-icon-theme",
+    // "pkief.material-icon-theme",
     "davidanson.vscode-markdownlint",
     "catppuccin.catppuccin-vsc",
 

@@ -1,5 +1,4 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "theme": "system",
-  "plugin": ["file:///usr/lib/opencode/plugins/opencode-antigravity-auth"]
+  "plugin": ["opencode-gemini-auth@latest", "opencode-pty"]
 }

@@ -5,7 +5,7 @@
     "light": "Catppuccin Latte",
     "dark": "Catppuccin Mocha"
   },
-  "icon_theme": "Material Icon Theme",
+  "icon_theme": "Symbols Icon Theme",
   "tab_bar": {
     "show_nav_history_buttons": false
   },
@@ -21,9 +21,9 @@
 
   // =============== Font & Typography ===============
   "ui_font_family": "Maple Mono NF",
-  "ui_font_size": 18,
+  "ui_font_size": 22,
   "buffer_font_family": "Maple Mono NF",
-  "buffer_font_size": 18,
+  "buffer_font_size": 22,
   "buffer_font_weight": 320,
   "buffer_line_height": {
     "custom": 1.6
@@ -46,10 +46,10 @@
 
   // =============== Editor Behavior ===============
   "base_keymap": "VSCode",
-  "vim_mode": true,
+  "vim_mode": false,
   "cursor_blink": false,
-  "which_key": { "enabled": true, "delay_ms": 500 },
-  "relative_line_numbers": "enabled",
+  "which_key": { "enabled": false, "delay_ms": 500 },
+  "relative_line_numbers": "disabled",
   "formatter": "language_server",
   "format_on_save": "off",
   "remove_trailing_whitespace_on_save": false,
@@ -81,8 +81,10 @@
     "mode": "eager"
   },
   "agent": {
-    "always_allow_tool_actions": true,
-    "default_width": 320,
+    "tool_permissions": {
+      "default": "allow"
+    },
+    "default_width": 480,
     "default_model": {
       "model": "claude-haiku-4.5",
       "provider": "copilot_chat"
@@ -213,15 +215,15 @@
     "border_size": 2
   },
   "project_panel": {
-    "default_width": 320,
+    "default_width": 480,
     "dock": "right"
   },
   "outline_panel": {
-    "default_width": 320,
+    "default_width": 480,
     "dock": "right"
   },
   "git_panel": {
-    "default_width": 320,
+    "default_width": 480,
     "dock": "right",
     "status_style": "label_color",
     "tree_view": false
@@ -232,12 +234,12 @@
   },
   "collaboration_panel": {
     "button": true,
-    "default_width": 280
+    "default_width": 360
   },
   "notification_panel": {
     "button": true,
     "dock": "left",
-    "default_width": 280
+    "default_width": 360
   },
   "debugger": {
     "button": true,
@@ -252,14 +254,14 @@
       "EDITOR": "zed --wait"
     },
     "font_family": "Maple Mono NF",
-    "font_size": 15,
+    "font_size": 18,
     "font_weight": 320,
     "shell": "system"
   },
 
   // =============== Project, Files & Search ===============
   "file_finder": {
-    "git_status": true,
+    "file_icons": true,
     "include_ignored": "smart",
     "modal_max_width": "medium"
   },
@@ -318,6 +320,7 @@
     "oxc": true,
     "make": true,
     "material-icon-theme": true,
+    "symbols": true,
     "mcp-server-context7": true,
     "mdx": true,
     "nginx": true,

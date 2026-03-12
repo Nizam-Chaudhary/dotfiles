@@ -24,10 +24,25 @@ export FZF_DEFAULT_OPTS=" \
 # DOCKER_HOST=unix:///run/user/1000/docker.sock
 export PATH="$HOME/.bun/bin:$PATH"
 
-# Use kitty's ssh kitten only when running inside kitty
-if [ "$TERM" = "xterm-kitty" ]; then
-  alias sshk="kitten ssh"
-fi
+# Use kitty's ssh kitten only when `-k` flag passed
+ssh() {
+  local use_kitty=0
+  local args=()
+
+  for arg in "$@"; do
+    if [[ "$arg" == "-k" ]]; then
+      use_kitty=1
+    else
+      args+=("$arg")
+    fi
+  done
+
+  if (( use_kitty )); then
+    command kitten ssh "${args[@]}"
+  else
+    command ssh "${args[@]}"
+  fi
+}
 
 # GPG TTY
 export GPG_TTY=$(tty)

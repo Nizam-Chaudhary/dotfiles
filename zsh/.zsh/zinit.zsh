@@ -5,6 +5,9 @@
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 source "${ZINIT_HOME}/zinit.zsh"
 
+autoload -Uz compinit
+compinit -C
+
 # ----------------------------------------------------------
 # 1. Helper Function: Fix OMZ Plugins (Multi-file Support)
 # ----------------------------------------------------------
@@ -50,18 +53,14 @@ zinit wait"0" lucid for \
     OMZL::compfix.zsh \
     OMZL::termsupport.zsh
 
-# ----------------------------------------------------------
-# 3. Oh My Zsh Plugins (With Sparse Checkout Fix)
-# ----------------------------------------------------------
-# --- Standard Plugins ---
-ZOXIDE_CMD_OVERRIDE=cd
-zinit wait"0" lucid atpull"%atclone" atclone"_fix-omz-plugin" for \
-    OMZP::git \
-    OMZP::aliases \
+zinit wait"0" lucid for \
+    OMZP::bun \
     OMZP::alias-finder \
+    OMZP::git \
+    OMZP::extract \
+    OMZP::pm2 \
     OMZP::sudo \
     OMZP::dnf \
-    OMZP::extract \
     OMZP::colored-man-pages \
     OMZP::web-search \
     OMZP::copyfile \
@@ -70,18 +69,13 @@ zinit wait"0" lucid atpull"%atclone" atclone"_fix-omz-plugin" for \
     OMZP::git-extras \
     OMZP::history \
     OMZP::command-not-found \
-    OMZP::history-substring-search \
     OMZP::systemd \
     OMZP::zoxide \
     OMZP::eza \
     OMZP::tldr \
     OMZP::fzf \
     OMZP::mise \
-    OMZP::rsync
-
-zinit snippet OMZP::starship
-# --- Dev & Environment ---
-zinit wait"0" lucid atpull"%atclone" atclone"_fix-omz-plugin" for \
+    OMZP::rsync \
     OMZP::python \
     OMZP::ruby \
     OMZP::golang \
@@ -91,11 +85,10 @@ zinit wait"0" lucid atpull"%atclone" atclone"_fix-omz-plugin" for \
     OMZP::npm \
     OMZP::nvm \
     OMZP::fnm \
-    OMZP::bun \
-    OMZP::pm2
-
-# --- Cloud & Containers ---
-zinit wait"0" lucid atpull"%atclone" atclone"_fix-omz-plugin" for \
+    OMZP::postgres \
+    OMZP::mongocli \
+    OMZP::vscode \
+    OMZP::gh \
     OMZP::docker \
     OMZP::docker-compose \
     OMZP::podman \
@@ -107,14 +100,21 @@ zinit wait"0" lucid atpull"%atclone" atclone"_fix-omz-plugin" for \
     OMZP::helm \
     OMZP::argocd \
     OMZP::svcat \
+    OMZP::starship \
+    OMZP::brew \
     OMZP::terraform
 
-# --- Database & Tools ---
+ZOXIDE_CMD_OVERRIDE=cd
+
+# ----------------------------------------------------------
+# 3. Oh My Zsh Plugins (With Sparse Checkout Fix)
+# ----------------------------------------------------------
 zinit wait"0" lucid atpull"%atclone" atclone"_fix-omz-plugin" for \
-    OMZP::postgres \
-    OMZP::mongocli \
-    OMZP::vscode \
-    OMZP::gh 
+    OMZP::history-substring-search  \
+    OMZP::aliases
+
+# --- Database & Tools ---
+    
 
 # --- Disabled / Inactive Plugins (Safe to comment here) ---
 # zinit wait"0" lucid atpull"%atclone" atclone"_fix-omz-plugin" for \
@@ -149,7 +149,7 @@ zstyle ':omz:plugins:eza' 'git-status' yes
 # ----------------------------------------------------------
 
 # Completions: Must run compinit early
-zinit ice wait"0" lucid atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit"
+# zinit ice wait"0" lucid atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit"
 zinit light zsh-users/zsh-completions
 
 # Autosuggestions

@@ -5,9 +5,6 @@
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 source "${ZINIT_HOME}/zinit.zsh"
 
-autoload -Uz compinit
-compinit -C
-
 # ----------------------------------------------------------
 # 1. Helper Function: Fix OMZ Plugins (Multi-file Support)
 # ----------------------------------------------------------
@@ -150,7 +147,7 @@ zstyle ':omz:plugins:eza' 'git-status' yes
 
 # Completions: Must run compinit early
 # zinit ice wait"0" lucid atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit"
-zinit light zsh-users/zsh-completions
+# zinit light zsh-users/zsh-completions
 
 # Autosuggestions
 zinit ice wait"0" lucid atload"!_zsh_autosuggest_start"
@@ -175,5 +172,16 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-bin-gem-node \
     zdharma-continuum/zinit-annex-patch-dl \
     zdharma-continuum/zinit-annex-rust
+    
+zi for \
+    atload"zicompinit; zicdreplay" \
+    blockf \
+    lucid \
+    wait \
+  zsh-users/zsh-completions
 
 ### End of Zinit's installer chunk
+
+# autoload -Uz compinit
+# compinit
+# zinit cdreplay -q

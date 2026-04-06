@@ -308,19 +308,35 @@ fi
 # ==========================================================
 # Atuin Setup (Shell History Manager)
 # ==========================================================
-section "Atuin Setup"
+# section "Atuin Setup"
 
-export PATH="$HOME/.local/bin:$PATH"
+# export PATH="$HOME/.local/bin:$PATH"
 
-if is_installed atuin; then
-  log_ok "Atuin already installed — skipping"
+# if is_installed atuin; then
+#   log_ok "Atuin already installed — skipping"
+# else
+#   log_info "Installing Atuin..."
+
+#   # Official install script
+#   run curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+
+#   log_ok "Atuin installed successfully"
+# fi
+
+# ==========================================================
+# FNM Setup (Fast Node Manager)
+# ==========================================================
+section "FNM Setup"
+
+if is_installed fnm; then
+  log_ok "fnm already installed — skipping"
 else
-  log_info "Installing Atuin..."
+  log_info "Installing fnmm..."
 
   # Official install script
-  run curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+  curl -fsSL https://fnm.vercel.app/install | bash
 
-  log_ok "Atuin installed successfully"
+  log_ok "fnm installed successfully"
 fi
 
 # ==========================================================

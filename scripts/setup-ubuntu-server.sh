@@ -250,15 +250,32 @@ mkdir -p "$HOME/.zsh/cache"
 # ==========================================================
 # Atuin
 # ==========================================================
-section "Atuin"
+# section "Atuin"
 
-export PATH="$HOME/.local/bin:$PATH"
+# export PATH="$HOME/.local/bin:$PATH"
 
-if ! is_installed atuin; then
-  curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
-  log_ok "Atuin installed"
+# if ! is_installed atuin; then
+#   curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+#   log_ok "Atuin installed"
+# else
+#   log_info "Atuin already installed"
+# fi
+# 
+
+# ==========================================================
+# FNM Setup (Fast Node Manager)
+# ==========================================================
+section "FNM Setup"
+
+if is_installed fnm; then
+  log_ok "fnm already installed — skipping"
 else
-  log_info "Atuin already installed"
+  log_info "Installing fnmm..."
+
+  # Official install script
+  curl -fsSL https://fnm.vercel.app/install | bash
+
+  log_ok "fnm installed successfully"
 fi
 
 # ==========================================================

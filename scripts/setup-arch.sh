@@ -264,6 +264,22 @@ fi
 # fi
 
 # ==========================================================
+# FNM Setup (Fast Node Manager)
+# ==========================================================
+section "FNM Setup"
+
+if is_installed fnm; then
+  log_ok "fnm already installed — skipping"
+else
+  log_info "Installing fnmm..."
+
+  # Official install script
+  curl -fsSL https://fnm.vercel.app/install | bash
+
+  log_ok "fnm installed successfully"
+fi
+
+# ==========================================================
 # Dotfiles (stow.sh)
 # ==========================================================
 section "Dotfiles Setup"

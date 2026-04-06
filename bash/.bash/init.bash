@@ -32,3 +32,13 @@ fi
 if command -v atuin &>/dev/null; then
   eval "$(atuin init bash)"
 fi
+
+# opencode
+export PATH=/home/$USER/.opencode/bin:$PATH
+
+# fnm
+FNM_PATH="/home/$USER/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "$(fnm env --shell bash)"
+fi

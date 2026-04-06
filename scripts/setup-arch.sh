@@ -248,20 +248,20 @@ fi
 # ==========================================================
 # Atuin Setup (Shell History Manager)
 # ==========================================================
-section "Atuin Setup"
+# section "Atuin Setup"
 
-export PATH="$HOME/.local/bin:$PATH"
+# export PATH="$HOME/.local/bin:$PATH"
 
-if is_installed atuin; then
-  log_ok "Atuin already installed — skipping"
-else
-  log_info "Installing Atuin..."
+# if is_installed atuin; then
+#   log_ok "Atuin already installed — skipping"
+# else
+#   log_info "Installing Atuin..."
 
-  # Official install script
-  run curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+#   # Official install script
+#   run curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
-  log_ok "Atuin installed successfully"
-fi
+#   log_ok "Atuin installed successfully"
+# fi
 
 # ==========================================================
 # Dotfiles (stow.sh)
@@ -288,12 +288,8 @@ export PATH="$HOME/.local/bin:$PATH"
 
 if is_installed mise; then
   log_info "Installing runtimes via mise..."
-  run mise install node@22
-  run mise install bun@latest
-  run mise install pnpm@latest
-  run mise use -g node@22
-  run mise use -g bun@latest
-  run mise use -g pnpm@latest
+  run mise install node@22 bun@latest pnpm@latest
+  run mise use -g bun@latest pnpm@latest
 
   # Activate mise in current shell to make tools available
   log_info "Activating mise environment..."

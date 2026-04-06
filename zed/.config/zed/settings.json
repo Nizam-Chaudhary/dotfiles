@@ -5,7 +5,7 @@
     "light": "Catppuccin Latte",
     "dark": "Catppuccin Mocha"
   },
-  "icon_theme": "Symbols Icon Theme",
+  "icon_theme": "Material Icon Theme",
   "tab_bar": {
     "show_nav_history_buttons": false
   },
@@ -171,7 +171,6 @@
       "language_servers": [
         "!typescript-language-server",
         "!tsgo",
-        "!oxc",
         "vtsls",
         "..."
       ]
@@ -181,7 +180,6 @@
       "language_servers": [
         "!typescript-language-server",
         "!tsgo",
-        "!oxc",
         "vtsls",
         "..."
       ]
@@ -191,7 +189,6 @@
       "language_servers": [
         "!typescript-language-server",
         "!tsgo",
-        "!oxc",
         "vtsls",
         "..."
       ]
@@ -226,6 +223,7 @@
     "default_width": 480,
     "dock": "right",
     "status_style": "label_color",
+    "file_icons": true,
     "tree_view": false
   },
   "centered_layout": {
@@ -321,7 +319,7 @@
     "make": true,
     "material-icon-theme": true,
     "symbols": true,
-    "mcp-server-context7": true,
+    "mcp-server-context7": false,
     "mdx": true,
     "nginx": true,
     "prisma": true,

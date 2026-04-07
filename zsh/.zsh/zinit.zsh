@@ -30,76 +30,141 @@ _fix-omz-plugin() {
     rm -rf ./ohmyzsh
 }
 
+zinit ice as"command" from"gh-r" \
+          atclone"./starship init zsh > init.zsh; ./starship completions zsh > _starship" \
+          atpull"%atclone" src"init.zsh"
+zinit light starship/starship
+
 # ----------------------------------------------------------
 # 2. Oh My Zsh Libraries (Turbo Group 0)
 # ----------------------------------------------------------
-zinit wait"0" lucid for \
-    OMZL::git.zsh \
-    OMZL::functions.zsh \
-    OMZL::bzr.zsh \
-    OMZL::clipboard.zsh \
-    OMZL::key-bindings.zsh \
-    OMZL::misc.zsh \
-    OMZL::spectrum.zsh \
-    OMZL::directories.zsh \
-    OMZL::grep.zsh \
-    OMZL::history.zsh \
-    OMZL::correction.zsh \
-    OMZL::async_prompt.zsh \
-    OMZL::completion.zsh \
-    OMZL::compfix.zsh \
-    OMZL::termsupport.zsh
+zinit ice wait lucid
+zi snippet OMZL::git.zsh
+zinit ice wait lucid
+zi snippet OMZL::functions.zsh 
+zinit ice wait lucid
+zi snippet OMZL::bzr.zsh 
+zinit ice wait lucid
+zi snippet OMZL::clipboard.zsh 
+zinit ice wait lucid
+zi snippet OMZL::key-bindings.zsh 
+zinit ice wait lucid
+zi snippet OMZL::misc.zsh 
+zinit ice wait lucid
+zi snippet OMZL::spectrum.zsh 
+zinit ice wait lucid
+zi snippet OMZL::directories.zsh 
+zinit ice wait lucid
+zi snippet OMZL::grep.zsh 
+zinit ice wait lucid
+zi snippet OMZL::history.zsh 
+zinit ice wait lucid
+zi snippet OMZL::correction.zsh 
+zinit ice wait lucid
+zi snippet OMZL::async_prompt.zsh 
+zinit ice wait lucid
+zi snippet OMZL::completion.zsh 
+zinit ice wait lucid
+zi snippet OMZL::compfix.zsh 
+zinit ice wait lucid
+zi snippet OMZL::termsupport.zsh
 
-zinit wait"0" lucid for \
-    OMZP::bun \
-    OMZP::alias-finder \
-    OMZP::git \
-    OMZP::extract \
-    OMZP::pm2 \
-    OMZP::sudo \
-    OMZP::dnf \
-    OMZP::colored-man-pages \
-    OMZP::web-search \
-    OMZP::copyfile \
-    OMZP::copypath \
-    OMZP::cp \
-    OMZP::git-extras \
-    OMZP::history \
-    OMZP::command-not-found \
-    OMZP::systemd \
-    OMZP::zoxide \
-    OMZP::eza \
-    OMZP::tldr \
-    OMZP::fzf \
-    OMZP::mise \
-    OMZP::rsync \
-    OMZP::python \
-    OMZP::ruby \
-    OMZP::golang \
-    OMZP::node \
-    OMZP::deno \
-    OMZP::nestjs \
-    OMZP::npm \
-    OMZP::nvm \
-    OMZP::fnm \
-    OMZP::postgres \
-    OMZP::mongocli \
-    OMZP::vscode \
-    OMZP::gh \
-    OMZP::docker \
-    OMZP::docker-compose \
-    OMZP::podman \
-    OMZP::kubectl \
-    OMZP::kubectx \
-    OMZP::k9s \
-    OMZP::kind \
-    OMZP::minikube \
-    OMZP::helm \
-    OMZP::argocd \
-    OMZP::svcat \
-    OMZP::starship \
-    OMZP::brew \
-    OMZP::terraform
+zinit ice wait"1" lucid
+zi snippet OMZP::bun
+zinit ice wait"1" lucid
+zi snippet OMZP::alias-finder
+zinit ice wait"1" lucid
+zi snippet OMZP::git
+zinit ice wait"1" lucid
+zi snippet OMZP::extract
+zinit ice wait"1" lucid
+zi snippet OMZP::pm2
+zinit ice wait"1" lucid
+zi snippet OMZP::sudo
+zinit ice wait"1" lucid
+zi snippet OMZP::dnf
+zinit ice wait"1" lucid
+zi snippet OMZP::colored-man-pages
+zinit ice wait"1" lucid
+zi snippet OMZP::web-search
+zinit ice wait"1" lucid
+zi snippet OMZP::copyfile
+zinit ice wait"1" lucid
+zi snippet OMZP::copypath
+zinit ice wait"1" lucid
+zi snippet OMZP::cp
+zinit ice wait"1" lucid
+zi snippet OMZP::git-extras
+zinit ice wait"1" lucid
+zi snippet OMZP::history
+zinit ice wait"1" lucid
+zi snippet OMZP::command-not-found
+zinit ice wait"1" lucid
+zi snippet OMZP::systemd
+zinit ice wait lucid
+zi snippet OMZP::zoxide
+zinit ice wait lucid
+zi snippet OMZP::eza
+zinit ice wait"1" lucid
+zi snippet OMZP::tldr
+zinit ice wait"1" lucid
+zi snippet OMZP::fzf
+zinit ice wait"1" lucid
+zi snippet OMZP::mise
+zinit ice wait"1" lucid
+zi snippet OMZP::rsync
+zinit ice wait"1" lucid
+zi snippet OMZP::python
+zinit ice wait"1" lucid
+zi snippet OMZP::ruby
+zinit ice wait"1" lucid
+zi snippet OMZP::golang
+zinit ice wait"1" lucid
+zi snippet OMZP::node
+zinit ice wait"1" lucid
+zi snippet OMZP::deno
+zinit ice wait"1" lucid
+zi snippet OMZP::nestjs
+zinit ice wait"1" lucid
+zi snippet OMZP::npm
+zinit ice wait"1" lucid
+zi snippet OMZP::nvm
+zinit ice wait"1" lucid
+zi snippet OMZP::fnm
+zinit ice wait"1" lucid
+zi snippet OMZP::postgres
+zinit ice wait"1" lucid
+zi snippet OMZP::mongocli
+zinit ice wait"1" lucid
+zi snippet OMZP::vscode
+zinit ice wait"1" lucid
+zi snippet OMZP::gh
+zinit ice wait"1" lucid
+zi snippet OMZP::docker
+zinit ice wait"1" lucid
+zi snippet OMZP::docker-compose
+zinit ice wait"1" lucid
+zi snippet OMZP::podman
+zinit ice wait"1" lucid
+zi snippet OMZP::kubectl
+zinit ice wait"1" lucid
+zi snippet OMZP::kubectx
+zinit ice wait"1" lucid
+zi snippet OMZP::k9s
+zinit ice wait"1" lucid
+zi snippet OMZP::kind
+zinit ice wait"1" lucid
+zi snippet OMZP::minikube
+zinit ice wait"1" lucid
+zi snippet OMZP::helm
+zinit ice wait"1" lucid
+zi snippet OMZP::argocd
+zinit ice wait"1" lucid
+zi snippet OMZP::svcat
+zinit ice wait"1" lucid
+zi snippet OMZP::brew
+zinit ice wait"1" lucid
+zi snippet OMZP::terraform
 
 ZOXIDE_CMD_OVERRIDE=cd
 
@@ -174,7 +239,7 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-rust
     
 zi for \
-    atload"zicompinit; zicdreplay" \
+    atload"zicompinit -C; zicdreplay" \
     blockf \
     lucid \
     wait \

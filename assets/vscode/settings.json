@@ -3,11 +3,14 @@
   "editor.cursorSmoothCaretAnimation": "off",
   "editor.fontFamily": "Maple Mono NF",
   "editor.guides.bracketPairs": "active",
+  "editor.bracketPairColorization.enabled": true,
   "editor.lineNumbers": "on",
   "editor.renderWhitespace": "selection",
   "workbench.editor.tabActionLocation": "right",
   "workbench.fontAliasing": "antialiased",
-  "workbench.colorTheme": "Catppuccin Mocha",
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredLightColorTheme": "Catppuccin Latte",
+  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
   "workbench.iconTheme": "file-icons",
   "workbench.list.smoothScrolling": false,
   "workbench.sideBar.location": "right",
@@ -34,7 +37,7 @@
   "editor.scrollbar.verticalScrollbarSize": 12,
   "workbench.tips.enabled": false,
   "window.systemColorTheme": "dark",
-  "breadcrumbs.symbolPath": "off",
+  "breadcrumbs.symbolPath": "last",
   "editor.minimap.enabled": false,
   "zenMode.hideStatusBar": false,
   "window.density.editorTabHeight": "default",
@@ -243,8 +246,9 @@
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "html", "markdown", "json", "jsonc", "yaml", "toml"],
   "github.copilot.enable": {
     "*": true,
+    "plaintext": true,
     "markdown": true,
-    "plaintext": false
+    "scminput": true
   },
   "github.copilot.nextEditSuggestions.enabled": true,
   "cSpell.allowCompoundWords": true,
@@ -489,5 +493,7 @@
     "https://json.schemastore.org/": true,
     "https://json-schema.org/": true,
     "https://biomejs.dev": true
-  }
+  },
+  "chat.tips.enabled": false,
+  "chat.viewSessions.orientation": "stacked"
 }

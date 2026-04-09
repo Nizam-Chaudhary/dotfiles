@@ -218,6 +218,13 @@ zstyle ':omz:plugins:eza' 'git-status' yes
 zinit ice wait"0" lucid atload"!_zsh_autosuggest_start"
 zinit light zsh-users/zsh-autosuggestions
 
+zi for \
+    atload"zicompinit -C; zicdreplay" \
+    blockf \
+    lucid \
+    wait \
+  zsh-users/zsh-completions
+
 # Syntax Highlighting: Must be loaded last in the group
 zinit ice wait"0" lucid atload"zicdreplay"
 zinit light zdharma-continuum/fast-syntax-highlighting
@@ -238,15 +245,7 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-patch-dl \
     zdharma-continuum/zinit-annex-rust
     
-zi for \
-    atload"zicompinit -C; zicdreplay" \
-    blockf \
-    lucid \
-    wait \
-  zsh-users/zsh-completions
-
+autoload -Uz compinit
+compinit
+zinit cdreplay -q
 ### End of Zinit's installer chunk
-
-# autoload -Uz compinit
-# compinit
-# zinit cdreplay -q

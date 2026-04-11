@@ -492,7 +492,10 @@
     "https://www.schemastore.org/": true,
     "https://json.schemastore.org/": true,
     "https://json-schema.org/": true,
-    "https://biomejs.dev": true
+    "https://biomejs.dev": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://developer.microsoft.com/json-schemas/": true
   },
   "chat.tips.enabled": false,
   "chat.viewSessions.orientation": "stacked"

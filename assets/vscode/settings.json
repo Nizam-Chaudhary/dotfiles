@@ -60,7 +60,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": "never",
     "source.fixAll.eslint": "never",
-    "source.organizeImports": "never"
+    "source.organizeImports": "never",
   },
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -79,7 +79,7 @@
   "remote.autoForwardPortsSource": "hybrid",
 
   "workbench.editorAssociations": {
-    "git-rebase-todo": "default"
+    "git-rebase-todo": "default",
   },
   "gitlens.terminalLinks.enabled": false,
   "gitlens.statusBar.enabled": false,
@@ -129,7 +129,7 @@
     "**/temp": true,
     "**/yarn.lock": true,
     "**/CHANGELOG*": true,
-    "**/LICENSE*": true
+    "**/LICENSE*": true,
   },
 
   // =========================
@@ -140,18 +140,18 @@
       "before": ["<Esc>"],
       "when": ["editorFocus"],
       "commands": [":nohl"],
-      "silent": true
-    }
+      "silent": true,
+    },
   ],
   "vim.visualModeKeyBindings": [
     {
       "before": ["p"],
-      "after": ["P"]
-    }
+      "after": ["P"],
+    },
   ],
   "vim.handleKeys": {
     "<C-a>": false,
-    "<C-f>": false
+    "<C-f>": false,
   },
   "vim.incsearch": true,
   "vim.searchHighlightColor": "#f6ff0080",
@@ -179,7 +179,7 @@
   "prettify-ts.enabled": false,
   "tailwindCSS.experimental.classRegex": [
     ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
-    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
   ],
   "oneDarkPro.bold": true,
   "oneDarkPro.vivid": true,
@@ -187,68 +187,68 @@
     {
       "text": "NOTE:",
       "color": "#3c3c3c",
-      "backgroundColor": "lightblue"
-    }
+      "backgroundColor": "lightblue",
+    },
   ],
   "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
+    "vscodevim.vim": 1,
   },
   "todo-tree.filtering.excludeGlobs": ["**/node_modules/**"],
   "auto-close-tag.activationOnLanguage": ["html", "javascriptreact", "typescriptreact", "vue"],
   // ESLint config: https://github.com/antfu/eslint-config
   "eslint.codeAction.showDocumentation": {
-    "enable": true
+    "enable": true,
   },
   "eslint.quiet": true,
   // Silent the stylistic rules in you IDE, but still auto fix them
   "eslint.rules.customizations": [
     {
       "rule": "style/*",
-      "severity": "off"
+      "severity": "off",
     },
     {
       "rule": "format/*",
-      "severity": "off"
+      "severity": "off",
     },
     {
       "rule": "*-indent",
-      "severity": "off"
+      "severity": "off",
     },
     {
       "rule": "*-spacing",
-      "severity": "off"
+      "severity": "off",
     },
     {
       "rule": "*-spaces",
-      "severity": "off"
+      "severity": "off",
     },
     {
       "rule": "*-order",
-      "severity": "off"
+      "severity": "off",
     },
     {
       "rule": "*-dangle",
-      "severity": "off"
+      "severity": "off",
     },
     {
       "rule": "*-newline",
-      "severity": "off"
+      "severity": "off",
     },
     {
       "rule": "*quotes",
-      "severity": "off"
+      "severity": "off",
     },
     {
       "rule": "*semi",
-      "severity": "off"
-    }
+      "severity": "off",
+    },
   ],
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "html", "markdown", "json", "jsonc", "yaml", "toml"],
   "github.copilot.enable": {
     "*": true,
     "plaintext": true,
     "markdown": true,
-    "scminput": true
+    "scminput": true,
   },
   "github.copilot.nextEditSuggestions.enabled": true,
   "cSpell.allowCompoundWords": true,
@@ -268,42 +268,42 @@
       "clipboard": true,
       "compare": true,
       "history": false,
-      "remote": false
+      "remote": false,
     },
     "editorGroup": {
       "blame": true,
-      "compare": false
+      "compare": false,
     },
     "editorTab": {
       "clipboard": true,
       "compare": true,
       "history": true,
-      "remote": true
+      "remote": true,
     },
     "explorer": {
       "clipboard": true,
       "compare": true,
       "history": true,
-      "remote": true
+      "remote": true,
     },
     "scm": {
-      "authors": true
+      "authors": true,
     },
     "scmGroup": {
       "compare": true,
       "openClose": true,
-      "stash": true
+      "stash": true,
     },
     "scmGroupInline": {
-      "stash": true
+      "stash": true,
     },
     "scmItem": {
       "clipboard": true,
       "compare": true,
       "history": true,
       "remote": false,
-      "stash": true
-    }
+      "stash": true,
+    },
   },
   "i18n-ally.autoDetection": false,
   "i18n-ally.displayLanguage": "en",
@@ -319,22 +319,22 @@
   "prettier.singleQuote": true,
   "biome.requireConfiguration": true,
   "[nginx]": {
-    "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
+    "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf",
   },
   "[terraform]": {
-    "editor.defaultFormatter": "hashicorp.terraform"
+    "editor.defaultFormatter": "hashicorp.terraform",
   },
   "[terraform-vars]": {
-    "editor.defaultFormatter": "hashicorp.terraform"
+    "editor.defaultFormatter": "hashicorp.terraform",
   },
   "[dockercompose]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
     "editor.autoIndent": "advanced",
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   // "[jsonc]": {
   //   "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -346,7 +346,7 @@
   //   "editor.defaultFormatter": "esbenp.prettier-vscode"
   // },
   "[markdown]": {
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
   },
   // "[javascript]": {
   //   "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -359,7 +359,7 @@
   // },
 
   // ========== TypeScript / JavaScript ==========
-  "typescript.experimental.useTsgo": true,
+  "typescript.experimental.useTsgo": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.preferGoToSourceDefinition": true,
@@ -367,20 +367,20 @@
 
   // ========== Go Lang ==========
   "gopls": {
-    "ui.semanticTokens": true
+    "ui.semanticTokens": true,
   },
   "[go.mod]": {
-    "editor.defaultFormatter": "golang.go"
+    "editor.defaultFormatter": "golang.go",
   },
   "[go]": {
-    "editor.defaultFormatter": "golang.go"
+    "editor.defaultFormatter": "golang.go",
   },
   "go.toolsManagement.autoUpdate": true,
 
   // ========== File Nesting ==========
   // updated 2026-01-03 16:02
   // https://github.com/antfu/vscode-file-nesting-config
-  "explorer.fileNesting.enabled": false,
+  "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
     ".clang-tidy": ".clang-format, .clangd, compile_commands.json",
@@ -435,7 +435,7 @@
     "tauri.conf.json5": "tauri.*.conf.json5",
     "Tauri.toml": "Tauri.*.toml",
     "tsconfig.json": "tsconfig*.tsbuildinfo, tsconfig.*.json",
-    "vite.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
+    "vite.config.*": "vite.*.config.ts, *.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
     "vue.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, content.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, react-router.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
     "*.asax": "$(capture).*.cs, $(capture).*.vb",
     "*.ascx": "$(capture).*.cs, $(capture).*.vb",
@@ -481,10 +481,10 @@
     "*.vue": "$(capture).*.ts, $(capture).*.js, $(capture).story.vue",
     "*.w": "$(capture).*.w, I$(capture).w",
     "*.wat": "$(capture).wasm",
-    "*.xaml": "$(capture).xaml.cs"
+    "*.xaml": "$(capture).xaml.cs",
   },
   "[sql]": {
-    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter",
   },
   "json.schemaDownload.trustedDomains": {
     "https://schemastore.azurewebsites.net/": true,
@@ -495,8 +495,10 @@
     "https://biomejs.dev": true,
     "https://raw.githubusercontent.com/microsoft/vscode/": true,
     "https://raw.githubusercontent.com/devcontainers/spec/": true,
-    "https://developer.microsoft.com/json-schemas/": true
+    "https://developer.microsoft.com/json-schemas/": true,
+    "https://ui.shadcn.com/schema.json": true,
+    "https://turborepo.dev/schema.json": true,
   },
   "chat.tips.enabled": false,
-  "chat.viewSessions.orientation": "stacked"
+  "chat.viewSessions.orientation": "stacked",
 }

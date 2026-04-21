@@ -303,10 +303,8 @@ export PATH="$HOME/.local/bin:$PATH"
 
 if is_installed mise; then
   log_info "Installing runtimes via mise..."
-  run mise install node@22
   run mise install bun@latest
   run mise install pnpm@latest
-  run mise use -g node@22
   run mise use -g bun@latest
   run mise use -g pnpm@latest
 
@@ -318,7 +316,7 @@ if is_installed mise; then
 
   eval "$(mise activate bash)"
 
-  log_ok "Node.js, Bun and PNPM installed via mise"
+  log_ok "Bun and PNPM installed via mise"
 else
   log_error "mise not found — runtime setup skipped"
 fi

@@ -185,12 +185,15 @@ section "Brew Packages"
 
 BREW_PACKAGES=(
   fd ripgrep bat eza zoxide mise neovim
-  starship fastfetch glow
+  starship fastfetch glow git-delta
   lazygit lazydocker tlrc yazi rip2
   git curl wget zsh vim tmux stow btop htop unzip
   jq tree ncdu rsync aria2 fzf
+  mongodb-database-tools mongosh 
+  libpq libpq redis
 )
 
+brew tap mongodb/brew
 brew install "${BREW_PACKAGES[@]}"
 
 log_ok "Brew packages installed"

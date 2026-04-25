@@ -1,13 +1,12 @@
 {
   // =============== Appearance & Theme ===============
-  "mouse_wheel_zoom": true,
   "diff_view_style": "split",
   "theme": {
     "mode": "dark",
     "light": "Catppuccin Latte",
-    "dark": "Everforest Dark Hard"
+    "dark": "Catppuccin Mocha"
   },
-  "icon_theme": "Symbols Icon Theme",
+  "icon_theme": "Material Icon Theme",
   "tab_bar": {
     "show_nav_history_buttons": false
   },
@@ -17,13 +16,16 @@
     "show_close_button": "always",
     "show_diagnostics": "errors"
   },
+  "title_bar": {
+    "show_branch_icon": true
+  },
 
   // =============== Font & Typography ===============
-  "ui_font_family": "CaskaydiaCove Nerd Font Mono",
-  "ui_font_size": 22,
-  "buffer_font_family": "CaskaydiaCove Nerd Font Mono",
-  "buffer_font_size": 22,
-  "buffer_font_weight": 400,
+  "ui_font_family": "Maple Mono NF",
+  "ui_font_size": 18,
+  "buffer_font_family": "Maple Mono NF",
+  "buffer_font_size": 18,
+  "buffer_font_weight": 320,
   "buffer_line_height": {
     "custom": 1.6
   },
@@ -76,6 +78,7 @@
   "show_edit_predictions": true,
   "edit_predictions": {
     "provider": "zed",
+    "enabled_in_text_threads": false,
     "mode": "eager"
   },
   "agent": {
@@ -232,6 +235,11 @@
     "button": true,
     "default_width": 360
   },
+  "notification_panel": {
+    "button": true,
+    "dock": "left",
+    "default_width": 360
+  },
   "debugger": {
     "button": true,
     "dock": "bottom"
@@ -244,9 +252,9 @@
     "env": {
       "EDITOR": "zed --wait"
     },
-    "font_family": "CaskaydiaCove Nerd Font Mono",
-    "font_size": 20,
-    "font_weight": 400,
+    "font_family": "Maple Mono NF",
+    "font_size": 16,
+    "font_weight": 320,
     "shell": "system"
   },
 

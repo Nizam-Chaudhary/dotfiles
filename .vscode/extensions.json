@@ -38,7 +38,7 @@
     "typescriptteam.native-preview",
     // "pkief.material-icon-theme",
     "davidanson.vscode-markdownlint",
-    "catppuccin.catppuccin-vsc",
+    // "catppuccin.catppuccin-vsc",
 
     "gruntfuggly.todo-tree",
     "oven.bun-vscode",
@@ -64,7 +64,8 @@
     "ms-vscode.remote-explorer",
     "redhat.vscode-xml",
     "github.copilot",
-    "oxc.oxc-vscode"
+    "oxc.oxc-vscode",
+    "andreilucaci.everforest-pro"
     // "jdinhlife.gruvbox"
     // "vscodevim.vim",
     // "vue.volar",

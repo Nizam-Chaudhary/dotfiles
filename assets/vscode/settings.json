@@ -1,7 +1,7 @@
 {
   // ========== Visuals ==========
   "editor.cursorSmoothCaretAnimation": "off",
-  "editor.fontFamily": "Maple Mono NF",
+  "editor.fontFamily": "CaskaydiaCove Nerd Font Mono",
   "editor.guides.bracketPairs": "active",
   "editor.bracketPairColorization.enabled": true,
   "editor.lineNumbers": "on",
@@ -9,8 +9,8 @@
   "workbench.editor.tabActionLocation": "right",
   "workbench.fontAliasing": "antialiased",
   "window.autoDetectColorScheme": true,
-  "workbench.preferredLightColorTheme": "Catppuccin Latte",
-  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+  "workbench.preferredLightColorTheme": "Everforest Pro Light Vibrant",
+  "workbench.preferredDarkColorTheme": "Everforest Pro Dark Vibrant",
   "workbench.iconTheme": "file-icons",
   "workbench.list.smoothScrolling": false,
   "workbench.sideBar.location": "right",
@@ -18,12 +18,12 @@
   "workbench.tree.expandMode": "singleClick",
   "workbench.tree.indent": 10,
   "editor.fontSize": 15,
-  "editor.inlineSuggest.fontFamily": "Maple Mono NF",
-  "terminal.integrated.fontFamily": "Maple Mono NF",
-  "terminal.integrated.fontSize": 13,
-  "chat.fontFamily": "Maple Mono NF",
-  "chat.fontSize": 12,
-  "chat.editor.fontFamily": "Maple Mono NF",
+  "editor.inlineSuggest.fontFamily": "CaskaydiaCove Nerd Font Mono",
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono",
+  "terminal.integrated.fontSize": 14,
+  "chat.fontFamily": "CaskaydiaCove Nerd Font Mono",
+  "chat.fontSize": 15,
+  "chat.editor.fontFamily": "CaskaydiaCove Nerd Font Mono",
 
   // ========== Editor ==========
   "debug.onTaskErrors": "debugAnyway",
@@ -53,14 +53,14 @@
   "editor.stickyScroll.enabled": true,
   "editor.hover.sticky": true,
   "window.newWindowProfile": "Default",
-  "window.zoomLevel": 0.5,
+  "window.zoomLevel": 0.75,
   "editor.linkedEditing": true,
   "editor.smoothScrolling": false,
   "editor.mouseWheelScrollSensitivity": 1,
   "editor.codeActionsOnSave": {
     "source.fixAll": "never",
     "source.fixAll.eslint": "never",
-    "source.organizeImports": "never",
+    "source.organizeImports": "never"
   },
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -79,7 +79,7 @@
   "remote.autoForwardPortsSource": "hybrid",
 
   "workbench.editorAssociations": {
-    "git-rebase-todo": "default",
+    "git-rebase-todo": "default"
   },
   "gitlens.terminalLinks.enabled": false,
   "gitlens.statusBar.enabled": false,
@@ -129,7 +129,7 @@
     "**/temp": true,
     "**/yarn.lock": true,
     "**/CHANGELOG*": true,
-    "**/LICENSE*": true,
+    "**/LICENSE*": true
   },
 
   // =========================
@@ -140,18 +140,18 @@
       "before": ["<Esc>"],
       "when": ["editorFocus"],
       "commands": [":nohl"],
-      "silent": true,
-    },
+      "silent": true
+    }
   ],
   "vim.visualModeKeyBindings": [
     {
       "before": ["p"],
-      "after": ["P"],
-    },
+      "after": ["P"]
+    }
   ],
   "vim.handleKeys": {
     "<C-a>": false,
-    "<C-f>": false,
+    "<C-f>": false
   },
   "vim.incsearch": true,
   "vim.searchHighlightColor": "#f6ff0080",
@@ -179,7 +179,7 @@
   "prettify-ts.enabled": false,
   "tailwindCSS.experimental.classRegex": [
     ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
-    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
   ],
   "oneDarkPro.bold": true,
   "oneDarkPro.vivid": true,
@@ -187,68 +187,68 @@
     {
       "text": "NOTE:",
       "color": "#3c3c3c",
-      "backgroundColor": "lightblue",
-    },
+      "backgroundColor": "lightblue"
+    }
   ],
   "extensions.experimental.affinity": {
-    "vscodevim.vim": 1,
+    "vscodevim.vim": 1
   },
   "todo-tree.filtering.excludeGlobs": ["**/node_modules/**"],
   "auto-close-tag.activationOnLanguage": ["html", "javascriptreact", "typescriptreact", "vue"],
   // ESLint config: https://github.com/antfu/eslint-config
   "eslint.codeAction.showDocumentation": {
-    "enable": true,
+    "enable": true
   },
   "eslint.quiet": true,
   // Silent the stylistic rules in you IDE, but still auto fix them
   "eslint.rules.customizations": [
     {
       "rule": "style/*",
-      "severity": "off",
+      "severity": "off"
     },
     {
       "rule": "format/*",
-      "severity": "off",
+      "severity": "off"
     },
     {
       "rule": "*-indent",
-      "severity": "off",
+      "severity": "off"
     },
     {
       "rule": "*-spacing",
-      "severity": "off",
+      "severity": "off"
     },
     {
       "rule": "*-spaces",
-      "severity": "off",
+      "severity": "off"
     },
     {
       "rule": "*-order",
-      "severity": "off",
+      "severity": "off"
     },
     {
       "rule": "*-dangle",
-      "severity": "off",
+      "severity": "off"
     },
     {
       "rule": "*-newline",
-      "severity": "off",
+      "severity": "off"
     },
     {
       "rule": "*quotes",
-      "severity": "off",
+      "severity": "off"
     },
     {
       "rule": "*semi",
-      "severity": "off",
-    },
+      "severity": "off"
+    }
   ],
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "html", "markdown", "json", "jsonc", "yaml", "toml"],
   "github.copilot.enable": {
     "*": true,
     "plaintext": true,
     "markdown": true,
-    "scminput": true,
+    "scminput": true
   },
   "github.copilot.nextEditSuggestions.enabled": true,
   "cSpell.allowCompoundWords": true,
@@ -268,42 +268,42 @@
       "clipboard": true,
       "compare": true,
       "history": false,
-      "remote": false,
+      "remote": false
     },
     "editorGroup": {
       "blame": true,
-      "compare": false,
+      "compare": false
     },
     "editorTab": {
       "clipboard": true,
       "compare": true,
       "history": true,
-      "remote": true,
+      "remote": true
     },
     "explorer": {
       "clipboard": true,
       "compare": true,
       "history": true,
-      "remote": true,
+      "remote": true
     },
     "scm": {
-      "authors": true,
+      "authors": true
     },
     "scmGroup": {
       "compare": true,
       "openClose": true,
-      "stash": true,
+      "stash": true
     },
     "scmGroupInline": {
-      "stash": true,
+      "stash": true
     },
     "scmItem": {
       "clipboard": true,
       "compare": true,
       "history": true,
       "remote": false,
-      "stash": true,
-    },
+      "stash": true
+    }
   },
   "i18n-ally.autoDetection": false,
   "i18n-ally.displayLanguage": "en",
@@ -319,22 +319,22 @@
   "prettier.singleQuote": true,
   "biome.requireConfiguration": true,
   "[nginx]": {
-    "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf",
+    "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
   },
   "[terraform]": {
-    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.defaultFormatter": "hashicorp.terraform"
   },
   "[terraform-vars]": {
-    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.defaultFormatter": "hashicorp.terraform"
   },
   "[dockercompose]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
     "editor.autoIndent": "advanced",
-    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   // "[jsonc]": {
   //   "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -346,7 +346,7 @@
   //   "editor.defaultFormatter": "esbenp.prettier-vscode"
   // },
   "[markdown]": {
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
   // "[javascript]": {
   //   "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -359,21 +359,19 @@
   // },
 
   // ========== TypeScript / JavaScript ==========
-  "typescript.experimental.useTsgo": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "javascript.preferGoToSourceDefinition": true,
-  "typescript.preferGoToSourceDefinition": true,
+  "js/ts.experimental.useTsgo": true,
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "js/ts.preferGoToSourceDefinition": true,
 
   // ========== Go Lang ==========
   "gopls": {
-    "ui.semanticTokens": true,
+    "ui.semanticTokens": true
   },
   "[go.mod]": {
-    "editor.defaultFormatter": "golang.go",
+    "editor.defaultFormatter": "golang.go"
   },
   "[go]": {
-    "editor.defaultFormatter": "golang.go",
+    "editor.defaultFormatter": "golang.go"
   },
   "go.toolsManagement.autoUpdate": true,
 
@@ -481,10 +479,10 @@
     "*.vue": "$(capture).*.ts, $(capture).*.js, $(capture).story.vue",
     "*.w": "$(capture).*.w, I$(capture).w",
     "*.wat": "$(capture).wasm",
-    "*.xaml": "$(capture).xaml.cs",
+    "*.xaml": "$(capture).xaml.cs"
   },
   "[sql]": {
-    "editor.defaultFormatter": "adpyke.vscode-sql-formatter",
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
   },
   "json.schemaDownload.trustedDomains": {
     "https://schemastore.azurewebsites.net/": true,
@@ -497,8 +495,9 @@
     "https://raw.githubusercontent.com/devcontainers/spec/": true,
     "https://developer.microsoft.com/json-schemas/": true,
     "https://ui.shadcn.com/schema.json": true,
-    "https://turborepo.dev/schema.json": true,
+    "https://turborepo.dev/schema.json": true
   },
   "chat.tips.enabled": false,
   "chat.viewSessions.orientation": "stacked",
+  "biome.suggestInstallingGlobally": false
 }

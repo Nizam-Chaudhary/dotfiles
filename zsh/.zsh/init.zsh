@@ -20,5 +20,5 @@ export PATH=/home/$USER/.opencode/bin:$PATH
 FNM_PATH="/home/$USER/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
   export PATH="$FNM_PATH:$PATH"
-  eval "$(fnm env --shell zsh)"
+  eval "$(fnm env --shell zsh --use-on-cd)"
 fi

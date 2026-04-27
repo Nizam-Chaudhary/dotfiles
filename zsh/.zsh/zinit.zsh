@@ -75,11 +75,15 @@ zinit ice wait"1" lucid
 for snippet in \
     OMZL::git.zsh \
     OMZL::functions.zsh \
+    OMZL::bzr.zsh \
+    OMZL::clipboard.zsh \
     OMZL::key-bindings.zsh \
     OMZL::misc.zsh \
     OMZL::directories.zsh \
     OMZL::grep.zsh \
     OMZL::history.zsh \
+    OMZL::correction.zsh \
+    OMZL::async_prompt.zsh \
     OMZL::completion.zsh \
     OMZL::termsupport.zsh \
     OMZP::aliases \

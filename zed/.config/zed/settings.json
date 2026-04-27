@@ -1,5 +1,6 @@
 {
   // =============== Appearance & Theme ===============
+  "cli_default_open_behavior": "new_window",
   "mouse_wheel_zoom": true,
   "diff_view_style": "split",
   "theme": {

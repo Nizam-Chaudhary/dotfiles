@@ -194,6 +194,13 @@
     },
     "YAML": {
       "formatter": "prettier"
+    },
+    "SQL": {
+      "formatter": {
+        "external": {
+          "command": "sql-formatter",
+        }
+      }
     }
   },
   "prettier": {

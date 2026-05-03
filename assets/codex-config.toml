@@ -1,0 +1,25 @@
+model = "gpt-5.5"
+model_reasoning_effort = "low"
+approvals_reviewer = "user"
+plan_mode_reasoning_effort = "low"
+
+[plugins."google-drive@openai-curated"]
+enabled = true
+
+[plugins."notion@openai-curated"]
+enabled = true
+
+[tui]
+theme = "gruvbox-dark"
+
+[tui.model_availability_nux]
+"gpt-5.5" = 2
+
+[notice]
+fast_default_opt_out = true
+hide_full_access_warning = true
+
+[features]
+memories = true
+terminal_resize_reflow = true
+prevent_idle_sleep = true

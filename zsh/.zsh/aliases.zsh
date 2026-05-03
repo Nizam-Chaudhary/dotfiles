@@ -14,8 +14,8 @@ open() {
 }
 
 if command -v nvim >/dev/null 2>&1; then
-  export EDITOR="nvim"
-  export VISUAL="nvim"
+  export EDITOR="vim"
+  export VISUAL="vim"
 elif command -v vim >/dev/null 2>&1; then
   export EDITOR="vim"
   export VISUAL="vim"
@@ -24,4 +24,5 @@ else
   export VISUAL="vi"
 fi
 
+alias vi=vim
 alias ag='antigravity'

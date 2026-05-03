@@ -41,8 +41,8 @@ alias ....='cd ../../..'
 
 # Editors
 if command -v nvim >/dev/null 2>&1; then
-  export EDITOR="nvim"
-  export VISUAL="nvim"
+  export EDITOR="vim"
+  export VISUAL="vim"
 elif command -v vim >/dev/null 2>&1; then
   export EDITOR="vim"
   export VISUAL="vim"
@@ -51,8 +51,7 @@ else
   export VISUAL="vi"
 fi
 
-alias vi=nvim
-alias vim=nvim
+alias vi=vim
 
 # Tools
 alias c='opencode'
@@ -65,5 +64,3 @@ alias g='git'
 alias gcm='git commit -m'
 alias gcam='git commit -a -m'
 alias gcad='git commit -a --amend'
-
-alias ag='antigravity'

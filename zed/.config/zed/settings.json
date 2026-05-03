@@ -8,7 +8,11 @@
     "light": "Catppuccin Latte",
     "dark": "Everforest Dark Hard"
   },
-  "icon_theme": "Symbols Icon Theme",
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Symbols Icon Theme",
+    "dark": "Symbols Icon Theme"
+  },
   "tab_bar": {
     "show_nav_history_buttons": false
   },
@@ -329,7 +333,8 @@
     "terraform": true,
     "toml": true,
     "tsgo": true,
-    "catppuccin": true
+    "catppuccin": false,
+    "everforest-theme": true
   },
 
   // =============== Miscellaneous ===============

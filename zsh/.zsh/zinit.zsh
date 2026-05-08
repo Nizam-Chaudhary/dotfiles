@@ -139,6 +139,7 @@ zinit wait"1" lucid atpull"%atclone" atclone"_fix-omz-plugin" for \
     OMZP::helm \
     OMZP::argocd \
     OMZP::svcat \
+    OMZP::dnf \
     OMZP::brew \
     OMZP::terraform \
     OMZP::ubuntu

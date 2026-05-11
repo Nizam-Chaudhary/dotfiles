@@ -24,5 +24,9 @@ else
   export VISUAL="vi"
 fi
 
+if command -v bat >/dev/null 2>&1; then
+  alias cat="bat --no-pager --plain"
+fi
+
 alias vi=vim
 alias ag='antigravity'

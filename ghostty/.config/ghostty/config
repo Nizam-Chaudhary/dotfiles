@@ -1,5 +1,5 @@
 # Dynamic theme colors
-config-file = ?"~/.config/ghostty/everforest-dark-hard.conf"
+config-file = ?"~/.config/ghostty/catppuccin-mocha.conf"
 
 # Font
 font-family = "Maple Mono NF"

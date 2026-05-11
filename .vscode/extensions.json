@@ -38,7 +38,7 @@
     "typescriptteam.native-preview",
     // "pkief.material-icon-theme",
     "davidanson.vscode-markdownlint",
-    // "catppuccin.catppuccin-vsc",
+    "catppuccin.catppuccin-vsc",
 
     "gruntfuggly.todo-tree",
     "oven.bun-vscode",

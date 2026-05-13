@@ -14,7 +14,7 @@
 # --- General Settings ---
 [core]
     editor = vim
-    pager = delta
+    pager = hunk pager
 
 [init]
     defaultBranch = main

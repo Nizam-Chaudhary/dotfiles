@@ -191,8 +191,8 @@ BREW_PACKAGES=(
   jq tree ncdu rsync aria2 fzf
 )
 
-brew tap mongodb/brew
 brew install "${BREW_PACKAGES[@]}"
+brew install modem-dev/tap/hunk
 
 log_ok "Brew packages installed"
 

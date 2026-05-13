@@ -86,7 +86,6 @@ for snippet in \
     OMZL::async_prompt.zsh \
     OMZL::completion.zsh \
     OMZL::termsupport.zsh \
-    OMZP::aliases \
     OMZP::git \
     OMZP::extract \
     OMZP::sudo \
@@ -115,6 +114,7 @@ zinit wait"1" lucid atpull"%atclone" atclone"_fix-omz-plugin" for \
     OMZP::zoxide \
     OMZP::tldr \
     OMZP::fzf \
+    OMZP::aliases \
     OMZP::mise \
     OMZP::python \
     OMZP::golang \

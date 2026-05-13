@@ -1,0 +1,7 @@
+theme = "graphite"   # graphite, midnight, paper, ember
+mode = "split"        # auto, split, stack
+vcs = "git"          # git, jj
+exclude_untracked = false
+line_numbers = true
+wrap_lines = false
+agent_notes = false

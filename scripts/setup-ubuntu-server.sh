@@ -180,8 +180,8 @@ BREW_PACKAGES=(
   libpq libpq redis
 )
 
-brew tap mongodb/brew
 brew install "${BREW_PACKAGES[@]}"
+brew install modem-dev/tap/hunk
 
 log_ok "Brew packages installed"
 

@@ -149,14 +149,14 @@ section "Brew Packages"
 
 BREW_PACKAGES=(
   fd ripgrep bat eza zoxide mise neovim
-  starship fastfetch glow
-  lazygit tlrc yazi rip2
-  git curl wget zsh vim tmux stow
-  btop htop unzip jq tree ncdu rsync
-  aria2  fzf
+  starship fastfetch glow git-delta
+  lazygit lazydocker tlrc yazi rip2
+  git curl wget zsh vim tmux stow btop htop unzip
+  jq tree ncdu rsync aria2 fzf
 )
 
 brew install "${BREW_PACKAGES[@]}"
+brew install modem-dev/tap/hunk
 
 log_ok "Brew packages installed"
 
@@ -176,20 +176,23 @@ fi
 # ==========================================================
 # Zinit
 # ==========================================================
-section "Zinit"
+section "Zinit Installation"
 
+# Inline directory definition
 ZINIT_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/zinit/zinit.git"
 
 if [[ ! -d "$ZINIT_HOME" ]]; then
+  log_info "Installing Zinit to $ZINIT_HOME..."
   mkdir -p "$(dirname "$ZINIT_HOME")"
   git clone --depth=1 https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
-  # sudo chsh -s /usr/bin/zsh "$USER" || log_warn "chsh failed (expected on WSL)"
-  log_ok "Zinit installed"
+  # sudo chsh -s /usr/bin/zsh "$USER"
+  log_ok "Zinit installed successfully"
 else
+  log_info "Zinit already present; pulling updates..."
   git -C "$ZINIT_HOME" pull --quiet
-  log_info "Zinit updated"
 fi
 
+# Ensure completion cache exists
 mkdir -p "$HOME/.zsh/cache"
 
 # ==========================================================
@@ -209,18 +212,18 @@ mkdir -p "$HOME/.zsh/cache"
 # ==========================================================
 # FNM Setup (Fast Node Manager)
 # ==========================================================
-section "FNM Setup"
+# section "FNM Setup"
 
-if is_installed fnm; then
-  log_ok "fnm already installed — skipping"
-else
-  log_info "Installing fnmm..."
+# if is_installed fnm; then
+#   log_ok "fnm already installed — skipping"
+# else
+#   log_info "Installing fnmm..."
 
-  # Official install script
-  curl -fsSL https://fnm.vercel.app/install | bash
+#   # Official install script
+#   curl -fsSL https://fnm.vercel.app/install | bash
 
-  log_ok "fnm installed successfully"
-fi
+#   log_ok "fnm installed successfully"
+# fi
 
 # ==========================================================
 # Dotfiles
@@ -242,24 +245,36 @@ fi
 section "Mise"
 
 if is_installed mise; then
-  mise install node@22 bun@latest pnpm@latest
-  mise use -g node@22 bun@latest pnpm@latest
+  log_info "Installing runtimes via mise..."
+  mise use -g node@24 bun@latest
+
+  # Activate mise in current shell to make tools available
+  log_info "Activating mise environment..."
+
+  # Set PROMPT_COMMAND if not already set (required by mise activate)
+  export PROMPT_COMMAND="${PROMPT_COMMAND:-}"
+
   eval "$(mise activate bash)"
-  log_ok "Node, Bun, PNPM installed via mise"
+
+  log_ok "Node.js, Bun and PNPM installed via mise"
 else
-  log_warn "mise not found — skipping runtimes"
+  log_error "mise not found — runtime setup skipped"
 fi
 
-# ==========================================================
-# pnpm Completion
-# ==========================================================
-section "pnpm Completion"
-
-if is_installed pnpm && [[ -d /usr/share/bash-completion/completions ]]; then
-  pnpm completion bash | sudo tee /usr/share/bash-completion/completions/pnpm >/dev/null
-  log_ok "pnpm bash completion installed"
+# --------------------------
+# pnpm-shell-completion (bash)
+# --------------------------
+if [[ -d /usr/share/bash-completion/completions ]]; then
+  log_info "Setting up pnpm bash completion..."
+  if is_installed pnpm; then
+    pnpm completion bash >/tmp/pnpm.bash
+    sudo mv /tmp/pnpm.bash /usr/share/bash-completion/completions/pnpm
+    log_ok "pnpm bash completion installed"
+  else
+    log_warn "pnpm not yet available, skipping bash completion"
+  fi
 else
-  log_warn "pnpm or bash-completion missing — skipping"
+  log_warn "bash-completion not found, skipping bash completion"
 fi
 
 # ==========================================================

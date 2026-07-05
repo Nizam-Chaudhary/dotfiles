@@ -42,3 +42,9 @@ if [ -d "$FNM_PATH" ]; then
   export PATH="$FNM_PATH:$PATH"
   eval "$(fnm env --shell bash)"
 fi
+
+# GPG signing support
+if command -v gpg-connect-agent >/dev/null 2>&1; then
+  export GPG_TTY=$(tty)
+  gpg-connect-agent updatestartuptty /bye >/dev/null 2>&1
+fi

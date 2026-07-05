@@ -49,3 +49,6 @@ ssh() {
     command ssh "${args[@]}"
   fi
 }
+
+# mise shim
+export PATH="$HOME/.local/share/mise/shims:$PATH"

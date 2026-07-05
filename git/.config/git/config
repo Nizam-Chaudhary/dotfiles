@@ -73,10 +73,10 @@
   	helper = /usr/local/bin/git-credential-manager
   	githubAuthMode=device
 
-[credential "https://dev.azure.com"]
-  	useHttpPath = true
-
 # WSL
 # [credential]
 # 	helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
-# 	credentialStore = wincred
+# 	credentialStore = wincredman
+
+[credential "https://dev.azure.com"]
+  	useHttpPath = true

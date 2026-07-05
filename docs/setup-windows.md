@@ -208,8 +208,10 @@ winget install -e --id eza-community.eza
 winget install -e --id sharkdp.bat
 winget install -e --id dandavison.delta        # git-delta
 winget install -e --id sharkdp.dust
+winget install -e --id Starship.Starship
 winget install -e --id ajeetdsouza.zoxide
 winget install -e --id junegunn.fzf
+
 winget install tldr-pages.tlrc
 
 winget install sxyazi.yazi

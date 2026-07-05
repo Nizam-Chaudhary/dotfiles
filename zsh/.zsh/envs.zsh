@@ -54,3 +54,6 @@ ssh() {
 
 # GPG TTY
 export GPG_TTY=$(tty)
+
+# mise shim
+export PATH="$HOME/.local/share/mise/shims:$PATH"

@@ -327,18 +327,18 @@ fi
 # ==========================================================
 # FNM Setup (Fast Node Manager)
 # ==========================================================
-section "FNM Setup"
+# section "FNM Setup"
 
-if is_installed fnm; then
-  log_ok "fnm already installed — skipping"
-else
-  log_info "Installing fnmm..."
+# if is_installed fnm; then
+#   log_ok "fnm already installed — skipping"
+# else
+#   log_info "Installing fnmm..."
 
-  # Official install script
-  curl -fsSL https://fnm.vercel.app/install | bash
+#   # Official install script
+#   curl -fsSL https://fnm.vercel.app/install | bash
 
-  log_ok "fnm installed successfully"
-fi
+#   log_ok "fnm installed successfully"
+# fi
 
 # ==========================================================
 # Dotfiles (stow.sh)
@@ -365,12 +365,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 if is_installed mise; then
   log_info "Installing runtimes via mise..."
-  run mise install node@22
-  run mise install bun@latest
-  run mise install pnpm@latest
-  run mise use -g node@22
-  run mise use -g bun@latest
-  run mise use -g pnpm@latest
+  mise use -g node@24 bun@latest
 
   # Activate mise in current shell to make tools available
   log_info "Activating mise environment..."

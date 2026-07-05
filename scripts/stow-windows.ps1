@@ -112,6 +112,6 @@ Link-File `
 # ==============================
 Link-File `
   -Source "$DOTFILES\pwsh\pwsh.ps1" `
-  -Target "$HOME\OneDrive\Documents\PowerShell\Microsoft.PowerShell_profile.ps1"
+  -Target "$HOME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1"
 
 Write-Host "`n✔ Dotfiles linked successfully"

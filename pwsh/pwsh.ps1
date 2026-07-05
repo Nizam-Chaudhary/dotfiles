@@ -2,6 +2,9 @@
 # Environment & Core Behavior
 # ==================================================
 
+# Mise shim
+(& mise activate pwsh) | Out-String | Invoke-Expression
+
 # Editor
 if (Get-Command nvim -ErrorAction SilentlyContinue) {
     $env:EDITOR = 'nvim'
@@ -27,7 +30,7 @@ Set-Alias c cls -ErrorAction SilentlyContinue
 # ==================================================
 
 if (Get-Module -ListAvailable PSReadLine) {
-    Import-Module PSReadLine
+    # Import-Module PSReadLine
 
     # Menu-style completion (bash-like)
     Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
@@ -37,17 +40,17 @@ if (Get-Module -ListAvailable PSReadLine) {
     # Set-PSReadLineOption -PredictionViewStyle ListView
 }
 
-if (Get-Module -ListAvailable posh-git) {
-    Import-Module posh-git
-}
+# if (Get-Module -ListAvailable posh-git) {
+#     Import-Module posh-git
+# }
 
-if (Get-Module -ListAvailable TabExpansionPlusPlus) {
-    Import-Module TabExpansionPlusPlus
-}
+# if (Get-Module -ListAvailable TabExpansionPlusPlus) {
+#     Import-Module TabExpansionPlusPlus
+# }
 
-if (Get-Module -ListAvailable PSFzf) {
-    Import-Module PSFzf
-}
+# if (Get-Module -ListAvailable PSFzf) {
+#     Import-Module PSFzf
+# }
 
 
 # ==================================================

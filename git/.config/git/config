@@ -61,22 +61,23 @@
 [interactive]
     diffFilter = delta --color-only
 
-# --- Credentials ---
+# --- GCM for windows ---
 # [credential]
 #   credentialStore = gpg
 # 	helper = cache --timeout 5
 # 	helper = oauth
 
-# --- GCM for windows ---
-[credential]
-    credentialStore = gpg
-  	helper = /usr/local/bin/git-credential-manager
-  	githubAuthMode=device
-
-# WSL
+# --- GCM for Linux ---
 # [credential]
-# 	helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
+#   	githubAuthMode=device
+#     credentialStore = gpg
+#   	helper = /usr/local/bin/git-credential-manager
+
+# --- GCM for WSL ---
+# [credential]
+#   helper = "/mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe"
 # 	credentialStore = wincredman
+# 	githubAuthMode = device
 
 [credential "https://dev.azure.com"]
-  	useHttpPath = true
+ 	useHttpPath = true

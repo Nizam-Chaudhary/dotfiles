@@ -143,11 +143,10 @@ CORE_PACKAGES=(
   flatpak
   zsh
   delta
+  alacritty
 )
 
 sudo apt install -y --no-install-recommends "${CORE_PACKAGES[@]}"
-
-sudo snap install alacritty --classic
 
 # Enable Flathub repository
 if ! flatpak remote-list | grep -q flathub; then

@@ -28,6 +28,7 @@
   "ui_font_size": 22,
   "buffer_font_family": "CaskaydiaCove Nerd Font Mono",
   "buffer_font_size": 22,
+  "git_commit_buffer_font_size": 18,
   "buffer_font_weight": 400,
   "buffer_line_height": {
     "custom": 1.6

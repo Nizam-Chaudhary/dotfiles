@@ -40,7 +40,7 @@
     "davidanson.vscode-markdownlint",
     "catppuccin.catppuccin-vsc",
 
-    "gruntfuggly.todo-tree",
+    // "gruntfuggly.todo-tree",
     "oven.bun-vscode",
     "stylelint.vscode-stylelint",
     // "tobias-z.vscode-harpoon",
@@ -64,8 +64,8 @@
     "ms-vscode.remote-explorer",
     "redhat.vscode-xml",
     "github.copilot",
-    "oxc.oxc-vscode",
-    "andreilucaci.everforest-pro"
+    "oxc.oxc-vscode"
+    // "andreilucaci.everforest-pro"
     // "jdinhlife.gruvbox"
     // "vscodevim.vim",
     // "vue.volar",
